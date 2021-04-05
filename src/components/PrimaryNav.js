@@ -203,7 +203,7 @@ const PrimaryNav = forwardRef(
               >
                 <NavLink
                   state={{ prevLocation: location.pathname }}
-                  to={link.slug !== '/watch' ? link.slug : 'http://bit.ly/3csKkSE'  }
+                  to={link.slug !== '/watch' ? link.slug : 'https://www.youtube.com/channel/UC55kTkwBDpPrOlf7WrAsQJQ'  }
                   isExternal={link.slug === '/watch'}
                 >
                   {toUpperCase(link.name)}
