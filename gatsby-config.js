@@ -1,4 +1,4 @@
-const BASE_SITE_URL = 'https://www.rebuildblackbusiness.com';
+const BASE_SITE_URL = 'https://www.forearmworldwide.com/';
 
 require('dotenv').config({
   path: `.env`,
@@ -6,40 +6,40 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Rebuild Black Business`,
+    title: `Himanshu Dhar Title`,
     // eslint-disable-next-line max-len
-    description: `Restore wealth to Black communities through economic empowerment and resource allocation.`,
+    description: `Himanshu Dhar Description`,
     author: {
-      name: 'Rebuild Black Business',
+      name: 'Himanshu Dhar',
     },
     organization: {
-      name: 'Rebuild Black Business',
+      name: 'Forearm Worldwide',
       url: BASE_SITE_URL,
       logo:
-        'https://res.cloudinary.com/rebuild-black-business/image/upload/v1591562585/assets/RBBLogoFinal_ugdskx.png',
+        'https://res.cloudinary.com/dharhim/image/upload/v1617608620/forearm_tjdqfp.jpg',
     },
     seo: {
-      title: `Rebuild Black Business`,
-      description: `Restore wealth to Black communities through economic empowerment and resource allocation.`,
+      title: `Himanshu Dhar title`,
+      description: `Himanshu Dhar descrtiption`,
       image:
-        'https://res.cloudinary.com/rebuild-black-business/image/upload/v1591726474/assets/rbb-socialimage_g7rhcj.jpg',
+        'https://res.cloudinary.com/dharhim/image/upload/v1617608620/forearm_tjdqfp.jpg',
     },
     social: {
-      twitter: 'rebuildingblack',
+      twitter: 'cloudhar',
       fbAppID: 'RebuildingBlack',
-      instagram: 'rebuildingblack',
-      github: 'https://github.com/Rebuild-Black-Business',
-      contact: 'social@rebuildblackbusiness.com',
-      bugs: 'engineering@rebuildblackbusiness.com',
+      instagram: 'himalayanporter',
+      github: 'https://github.com/',
+      contact: 'himanshu.dhar@gmail.com',
+      bugs: 'himanshu.dhar@gmail.com',
       image:
-        'https://res.cloudinary.com/rebuild-black-business/image/upload/v1591726474/assets/rbb-socialimage_g7rhcj.jpg',
+        'https://res.cloudinary.com/dharhim/image/upload/v1617608620/forearm_tjdqfp.jpg',
     },
     logo: {
       src: '#',
       alt: 'Rebuild Black Business',
     },
-    image: `https://res.cloudinary.com/rebuild-black-business/image/upload/v1591726474/assets/rbb-socialimage_g7rhcj.jpg`, // used for RSS feed image and SEO fallback
-    logoText: 'Rebuild Black Business',
+    image: 'https://res.cloudinary.com/dharhim/image/arm_tjdqfp.jpg',
+    logoText: 'Himanshu111 ',
     siteUrl: BASE_SITE_URL,
     menuLinks: [
       {
@@ -51,78 +51,23 @@ module.exports = {
         slug: '/watch',
       },
       {
-        name: 'Businesses',
+        name: 'Organization',
         slug: '/businesses',
       },
       {
-        name: 'Fundraisers',
+        name: 'NGOs',
         slug: '/fundraisers',
       },
       {
-        name: 'Allies',
+        name: 'Volunteers',
         slug: '/allies',
       },
     ],
     photoCreditLinks: [
       {
-        photographer: 'Clay Banks',
-        url: 'https://www.instagram.com/clay.banks',
+        photographer: 'Himanshu Dhar',
+        url: 'https://www.instagram.com/himalayanporter',
         pagePathname: '/',
-      },
-      {
-        photographer: 'John Cameron',
-        url: 'https://unsplash.com/@john_cameron',
-        pagePathname: '/',
-      },
-      {
-        photographer: 'Kelly Lacy',
-        url: 'https://instagram.com/kellymlacy',
-        pagePathname: '/',
-      },
-      {
-        photographer: 'Mike Von',
-        url: 'https://thevoncomplex.com',
-        pagePathname: '/',
-      },
-      {
-        photographer: 'Kelly Lacy',
-        url: 'https://instagram.com/kellymlacy',
-        pagePathname: '/about',
-      },
-      {
-        photographer: 'WOCinTechChat.com',
-        url: 'http://www.wocintechchat.com/',
-        pagePathname: '/about',
-      },
-      {
-        photographer: 'Allison Christine',
-        url: 'https://www.instagram.com/happpyal/',
-        pagePathname: '/about',
-      },
-      {
-        photographer: 'Chris Slupski',
-        url: 'https://unsplash.com/@kslupski',
-        pagePathname: '/about',
-      },
-      {
-        photographer: 'Jason Leung',
-        url: 'https://www.instagram.com/xninjason/',
-        pagePathname: '/businesses',
-      },
-      {
-        photographer: 'Julian Myles',
-        url: 'https://julianmyles.nyc',
-        pagePathname: '/businesses',
-      },
-      {
-        photographer: 'Joe Yates',
-        url: 'https://www.instagram.com/josephyates_/',
-        pagePathname: '/allies',
-      },
-      {
-        photographer: 'Logan Weaver ',
-        url: 'https://lgnwvrphto.com',
-        pagePathname: '/allies',
       },
     ],
   },
@@ -130,9 +75,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rebuild Black Business`,
+        name: `Himanshu Dhar`,
         icon: `src/images/favicon.png`,
-        short_name: `Rebuild Black Business`,
+        short_name: `Himanshu Dhar`,
         start_url: `/`,
         background_color: `#f46036`, // theme orange
         theme_color: `#f46036`, // theme orange
