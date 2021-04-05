@@ -91,18 +91,6 @@ module.exports = {
         tables: [
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE_ID, // note that this is not a secret, just an id
-            tableName: `Businesses`,
-            tableView: `Approved`, // optional
-            queryName: `Businesses`,
-            separateNodeType: true,
-            separateMapType: true,
-            defaultValues: {
-              Business_Description: '',
-              Donation_Link: '',
-            },
-          },
-          {
-            baseId: process.env.GATSBY_AIRTABLE_BASE_ID, // note that this is not a secret, just an id
             tableName: `Allies`,
             tableView: `Approved`, // optional
             queryName: `Allies`,
