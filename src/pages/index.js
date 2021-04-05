@@ -82,8 +82,8 @@ export default () => {
         </Box>
         <ContentBlock
           layout="left"
-          imageSource="assets/home-header-bg" // @TODO :: Pass this to cloudinary
-          backgroundColor="#000"
+          imageSource="https://res.cloudinary.com/dharhim/image/upload/v1617605611/samples/landscapes/nature-mountains.jpg" // @TODO :: Pass this to cloudinary
+          backgroundColor="#5e56f6"
           backgroundMode="fade"
         >
           <Box pt={16} pb={[72, 72, 145]} ml={[0, 0, 10]} color="white">
@@ -95,17 +95,17 @@ export default () => {
                 fontFamily={theme.fonts['heading-slab']}
                 textTransform="uppercase"
               >
-                Rebuild
+                Forearm
               </Text>
               <Text
-                fontSize={['100px', '100px', '100px', '150px']}
+                fontSize={['90px', '90px', '90px', '140px']}
                 fontWeight="900"
                 lineHeight="1"
                 fontFamily={theme.fonts['heading-slab']}
                 textTransform="uppercase"
                 ml={[0, 0, -1]}
               >
-                Black
+                World
               </Text>
               <Text
                 lineHeight="0.5"
@@ -114,7 +114,7 @@ export default () => {
                 fontFamily={theme.fonts['heading-slab']}
                 textTransform="uppercase"
               >
-                Businesses
+                Business
               </Text>
             </Heading>
             <Text
@@ -124,131 +124,19 @@ export default () => {
               py={8}
               maxW="540px"
             >
-              Black-owned businesses need us. In a time of social unrest and
-              economic uncertainty, we are called to action!{' '}
-              <strong>Let’s do our part</strong>.
+              add some description here!{' '}
             </Text>
             <ButtonGroup spacing={4} mt={theme.spacing.base}>
               <Button
                 as={Link}
-                href={'/businesses'}
+                href={'/him'}
                 style={ctaButtonStyle}
                 variant="cta"
                 m={3}
                 h="auto"
                 px="30px"
               >
-                See Businesses
-              </Button>
-            </ButtonGroup>
-          </Box>
-        </ContentBlock>
-
-        <ContentBlock
-          layout="right"
-          imageSource="assets/cta1-bg" // @TODO :: Pass this to cloudinary
-          backgroundColor="#fff"
-          backgroundMode="fade"
-          backgroundOpacity="0.85"
-        >
-          <Box py={[72, 72, 190]} color={theme.colors['rbb-black-100']}>
-            <Heading
-              mb={theme.spacing.lg}
-              fontFamily={theme.fonts['heading-slab']}
-              fontWeight="900"
-              fontSize="40px"
-              lineHeight="1.2"
-              textTransform="uppercase"
-            >
-              Business Owners,
-              <br />
-              We&rsquo;re here for you.
-            </Heading>
-            <Box fontSize={theme.fontSizes.lg} maxW="540px">
-              <Text
-                fontFamily={theme.fonts.heading}
-                lineHeight="1.25"
-                pb={theme.spacing.base}
-              >
-                We want to restore wealth to Black communities by supporting you
-                and your business. Whether your business is in urgent need or
-                you are doing well, we're here to help.
-              </Text>
-              <Text fontFamily={theme.fonts.heading} lineHeight="1.25">
-                Contact one of our registered Allies directly for help.{' '}
-                <strong>We are all in this together.</strong>
-              </Text>
-            </Box>
-            <ButtonGroup spacing={4} mt={theme.spacing.base}>
-              <Button
-                variant="primary"
-                m={3}
-                h="auto"
-                px="30px"
-                as={Link}
-                href="/allies"
-              >
-                See Allies
-              </Button>
-            </ButtonGroup>
-          </Box>
-        </ContentBlock>
-
-        <ContentBlock
-          layout="left"
-          imageSource="assets/cta2-bg" // @TODO :: Pass this to cloudinary
-          backgroundColor="#000"
-          backgroundMode="fade"
-        >
-          <Box py={[72, 72, 190]} color={theme.colors['rbb-white']}>
-            <Heading
-              mb={theme.spacing.lg}
-              fontFamily={theme.fonts['heading-slab']}
-              fontWeight="900"
-              fontSize="40px"
-              lineHeight="1.2"
-              textTransform="uppercase"
-            >
-              How to help
-            </Heading>
-            <Box fontSize={theme.fontSizes.lg} maxW="540px">
-              <Text
-                fontFamily={theme.fonts.heading}
-                lineHeight="1.25"
-                pb={theme.spacing.base}
-              >
-                View our growing list of Black-owned businesses across the
-                nation! Find Black-owned businesses in your area or register any
-                that we’re missing.
-              </Text>
-              <Text fontFamily={theme.fonts.heading} lineHeight="1.25">
-                If you have specific skills you&rsquo;d like to offer, you can
-                register as an Ally.
-              </Text>
-            </Box>
-            <ButtonGroup spacing={4} mt={theme.spacing.base}>
-              <Button
-                variant="primary"
-                maxW="230px"
-                m={3}
-                h="auto"
-                px="30px"
-                as={Link}
-                href="/businesses"
-              >
-                See Businesses
-              </Button>
-              <Button
-                as={Link}
-                href="/allies"
-                variant="secondary"
-                maxW="230px"
-                m={3}
-                h="auto"
-                style={secondaryButtonStyle}
-                px="30px"
-              >
-                Sign up as an Ally
+                Lets Get Started
               </Button>
             </ButtonGroup>
           </Box>
@@ -256,7 +144,7 @@ export default () => {
 
         <ContentBlock
           layout="full"
-          imageSource="assets/cta3-bg"
+          imageSource="https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg"
           backgroundColor={theme.colors['rbb-white']}
         >
           <Box py={[140, 140, 200]} maxW="574px">
@@ -268,16 +156,13 @@ export default () => {
               lineHeight="1.2"
               textTransform="uppercase"
             >
-              Volunteer with us!
+              Already have an account!
             </Heading>
             <Text
               fontFamily={theme.fonts.heading}
               lineHeight="1.25"
               pb={theme.spacing.base}
             >
-              Join our group of volunteers. We’re developers, designers,
-              marketers, project managers, policy makers, and web professionals.
-              Welcome!
             </Text>
             <Button
               variant="cta"
@@ -286,7 +171,7 @@ export default () => {
               href={VOLUNTEER_URL}
               mt={theme.spacing.base}
             >
-              Join Us
+              Sign In
             </Button>
           </Box>
         </ContentBlock>
