@@ -51,16 +51,16 @@ module.exports = {
         slug: '/watch',
       },
       {
-        name: 'Organization',
+        name: 'Businesses',
         slug: '/businesses',
       },
       {
         name: 'NGOs',
-        slug: '/fundraisers',
+        slug: '/allies',
       },
       {
         name: 'Volunteers',
-        slug: '/allies',
+        slug: '/fundraisers',
       },
     ],
     photoCreditLinks: [
@@ -89,6 +89,18 @@ module.exports = {
       options: {
         apiKey: process.env.GATSBY_AIRTABLE_API_KEY, // pulls in from your .env file
         tables: [
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_ID, // note that this is not a secret, just an id
+            tableName: `Businesses`,
+            tableView: `Approved`, // optional
+            queryName: `Businesses`,
+            separateNodeType: true,
+            separateMapType: true,
+            defaultValues: {
+              Business_Description: '',
+              Donation_Link: '',
+            },
+          },
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE_ID, // note that this is not a secret, just an id
             tableName: `Allies`,
