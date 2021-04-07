@@ -11,7 +11,7 @@ import Layout from '../components/Layout';
 import { JustinLogo } from '../components/SVG/JustinLogo';
 import {
   FOUNDER_MESSAGE,
-  JUSTIN_PERSONAL_SITE,
+  PERSONAL_SITE,
   MISSION_MESSAGE,
   WHO_WE_ARE_MESSAGE,
 } from '../constants/about';
@@ -33,7 +33,7 @@ export default function About() {
         >
           <PageHeading>About</PageHeading>
           <Image
-            publicId="assets/people-protesting-on-street-4552840_gginry"
+            publicId="https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg"
             alt="close up of a fist in the air"
             cloudName="rebuild-black-business"
             pos="absolute"
@@ -79,8 +79,8 @@ export default function About() {
               message={
                 <>
                   When I started {''}
-                  <ExternalLink variant="cta" href="https://www.renderatl.com/">
-                    Render-Atlanta
+                  <ExternalLink variant="cta" href="https://www.forearmworldwide.com/">
+                    ForearmWorldwide 
                   </ExternalLink>{' '}
                   {FOUNDER_MESSAGE}
                   <Flex
@@ -93,13 +93,12 @@ export default function About() {
                       'flex-start',
                     ]}
                   >
-                    <JustinLogo link={JUSTIN_PERSONAL_SITE}></JustinLogo>
                   </Flex>
                   <List>
                     <ListItem>
                       <ExternalLink
                         variant="cta"
-                        href="https://twitter.com/ThugDebugger"
+                        href="https://twitter.com/cloudhar"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -109,7 +108,7 @@ export default function About() {
                     <ListItem>
                       <ExternalLink
                         variant="cta"
-                        href="https://www.instagram.com/thugdebugger/"
+                        href="https://www.instagram.com/himalayanporter/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -119,7 +118,7 @@ export default function About() {
                     <ListItem>
                       <ExternalLink
                         variant="cta"
-                        href="https://www.facebook.com/thugdebugger-109112997164763/"
+                        href="https://www.facebook.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -167,7 +166,7 @@ export default function About() {
             <ContactCard
               modalCard
               title="Business Owners"
-              publicId="assets/contact-left"
+              publicId="https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg"
               alt="business shop window"
               transforms={{ width: 800, height: 450, crop: 'crop' }}
               blurb="Add your business to our list"
@@ -181,7 +180,7 @@ export default function About() {
                     title="General Inquiry"
                     email={data.site.siteMetadata.social.contact}
                     blurb="Send us an email and we will be in touch"
-                    publicId="assets/contact-middle"
+                    publicId="https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg"
                     alt="aerial view of user typing at keyboard"
                   />
                 )}
@@ -190,7 +189,7 @@ export default function About() {
             <ContactCard
               title="Volunteers"
               blurb="Join us"
-              publicId="assets/contact-right"
+              publicId="https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg"
               alt="aerial view of group of people putting their hands into the middle"
             />
           </Grid>
