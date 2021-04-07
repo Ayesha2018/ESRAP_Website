@@ -39,19 +39,7 @@ function BusinessFilter({ isSearching, onSearch, selectedFilters, variant }) {
   const variants = {
     onDark: {
       labelColors: [rbbBlack, rbbBlack, rbbWhite],
-      buttonComponent: () => (
-        <PrimaryButton
-          onClick={handleSearchClick}
-          onKeyPress={event => {
-            if (event.key === 'Enter') {
-              handleSearchKeyPress(event);
-            }
-          }}
-          isLoading={isSearching}
-        >
-          Search
-        </PrimaryButton>
-      ),
+
     },
     onLight: {
       labelColors: [rbbBlack, rbbBlack, rbbBlack],
@@ -69,7 +57,7 @@ function BusinessFilter({ isSearching, onSearch, selectedFilters, variant }) {
           }}
           isLoading={isSearching}
         >
-          Search
+        
         </Button>
       ),
     },
@@ -98,7 +86,7 @@ function BusinessFilter({ isSearching, onSearch, selectedFilters, variant }) {
   const selectedVariant = variants[variant];
 
   let SubmitButton = selectedVariant.buttonComponent;
-
+//himanshu changes done to remove search box on the main page
   return (
     <FormControl
       bg={[rbbWhite, rbbWhite, 'rgba(0,0,0,0)']}
@@ -107,63 +95,7 @@ function BusinessFilter({ isSearching, onSearch, selectedFilters, variant }) {
       fontFamily="Arvo"
       margin="0 auto"
     >
-      <Flex
-        width="100%"
-        justifyContent="center"
-        direction={['column', 'column', 'row', 'row']}
-      >
-        <Flex
-          direction="column"
-          marginRight={[0, 0, theme.spacing.base]}
-          marginBottom={[theme.spacing.base, theme.spacing.base, 0]}
-        >
-          <FormLabel htmlFor="type" color={selectedVariant.labelColors}>
-            Business Type
-          </FormLabel>
-          <Select
-            ref={typeRef}
-            id="type"
-            placeholder="All"
-            defaultValue={typeToLabel}
-          >
-            {businessTypes.map(resource => {
-              return (
-                <option key={resource.id} value={resource.label}>
-                  {resource.label}
-                </option>
-              );
-            })}
-          </Select>
-        </Flex>
-        <Flex
-          direction="column"
-          marginRight={[0, 0, theme.spacing.base]}
-          marginBottom={[theme.spacing.base, theme.spacing.base, 0]}
-        >
-          <FormLabel htmlFor="location" color={selectedVariant.labelColors}>
-            Location
-          </FormLabel>
-          <Input
-            value={location}
-            id="location"
-            type="text"
-            placeholder="e.g. Atlanta or 30308"
-            onChange={event => setLocation(event.currentTarget.value)}
-            onKeyPress={event => {
-              if (event.key === 'Enter') {
-                handleSearchKeyPress(event);
-              }
-            }}
-          />
-        </Flex>
-        <Flex
-          direction="column"
-          alignSelf={['center', 'center', 'flex-end']}
-          pt={['1rem', '1rem', 0, 0]}
-        >
-          <SubmitButton />
-        </Flex>
-      </Flex>
+
     </FormControl>
   );
 }
