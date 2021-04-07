@@ -178,7 +178,7 @@ export default function Businesses(props) {
   );
 
   const heroBackgroundImageUrl =
-    '//res.cloudinary.com/rebuild-black-business/image/upload/c_scale,f_auto,h_0.6,q_auto/v1/assets/business-header';
+    'https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg';
 
   return (
     <>
