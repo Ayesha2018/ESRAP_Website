@@ -35,7 +35,7 @@ const SubscribeForm = () => {
     >
       <Stack spacing={8}>
         <FormControl isRequired>
-          <FormLabel htmlFor="mce-EMAIL">Email Address</FormLabel>
+          <FormLabel htmlFor="mce-EMAIL">Himanshu User Name</FormLabel>
           <Input
             data-testid="email"
             type="email"
@@ -47,7 +47,7 @@ const SubscribeForm = () => {
         </FormControl>
 
         <FormControl isRequired>
-          <FormLabel htmlFor="mce-FNAME">First Name</FormLabel>
+          <FormLabel htmlFor="mce-FNAME">Himanshu User Name</FormLabel>
           <Input
             data-testid="firstName"
             type="text"
@@ -57,7 +57,7 @@ const SubscribeForm = () => {
         </FormControl>
 
         <FormControl>
-          <FormLabel htmlFor="mce-LNAME">Last Name</FormLabel>
+          <FormLabel htmlFor="mce-LNAME"> Himanshu Password</FormLabel>
           <Input
             data-testid="lastName"
             type="text"
@@ -79,7 +79,7 @@ const SubscribeForm = () => {
         </div>
 
         <Button type="submit" name="subscribe">
-          Subscribe
+          Himanshu Login 
         </Button>
 
         <Text fontSize="xs">
