@@ -12,7 +12,7 @@ export function Logo() {
       aria-labelledby="rbbLogo"
       role="img"
     >
-      <title id="rbbLogo">Rebuild Black Business</title>
+      <title id="rbbLogo">Himanshu Dhar</title>
       <defs>
         <clipPath id="a" clipPathUnits="userSpaceOnUse">
           <path d="M0 1177h1177V0H0z" />
