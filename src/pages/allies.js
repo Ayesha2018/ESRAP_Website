@@ -33,14 +33,12 @@ export default function Allies() {
       pb={theme.spacing.base}
       textAlign="center"
     >
-      These Allies are offering their skills to help Black-owned businesses.
-      Whether you need to rebuild or stay afloat, an Ally can help. Search for
-      Allies by skill or location and contact them directly.
+      Himanshu NGO listing Here 
     </Text>
   );
 
   const heroBackgroundImageUrl =
-    '//res.cloudinary.com/rebuild-black-business/image/upload/c_scale,f_auto,h_0.6,q_auto/v1/assets/ally-background';
+    'https://res.cloudinary.com/dharhim/image/upload/v1617605591/sample.jpg';
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
