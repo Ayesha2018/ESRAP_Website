@@ -13,11 +13,11 @@ import {
 import PrimaryButton from '../Buttons/PrimaryButton';
 
 const skillTypes = [
-  { id: 'business', label: 'Business' },
-  { id: 'marketing', label: 'Marketing' },
-  { id: 'outreach', label: 'Outreach' },
-  { id: 'tech', label: 'Tech' },
-  { id: 'government', label: 'Government' },
+  { id: 'poverty', label: 'Poverty' },
+  { id: 'climatechange', label: 'ClimateChange' },
+  { id: 'equality', label: 'Equaility' },
+  { id: 'pollution', label: 'Pollution' },
+  { id: 'education', label: 'Education' },
 ];
 
 function BusinessFilter(props) {
@@ -87,7 +87,7 @@ function BusinessFilter(props) {
             marginBottom={[theme.spacing.base, theme.spacing.base, 0]}
           >
             <FormLabel htmlFor="skill" color={[rbbBlack, rbbBlack, rbbWhite]}>
-              Skill
+              SDG type
             </FormLabel>
             <Select ref={skillRef} id="skill" placeholder="All">
               {skillTypes.map(skill => {
