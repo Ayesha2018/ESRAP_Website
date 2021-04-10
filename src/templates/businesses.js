@@ -147,9 +147,7 @@ export default function Businesses(props) {
         pb={theme.spacing.base}
         textAlign="center"
       >
-        Want to find Black-owned businesses across the nation? Filter businesses
-        by type, location, and need. Businesses in need have been harmed by the
-        ongoing social upheaval. Your support will help them rebuild.
+        Some test here
       </Text>
       <Text
         fontFamily={theme.fonts.heading}
@@ -157,7 +155,7 @@ export default function Businesses(props) {
         pb={theme.spacing.base}
         textAlign="center"
       >
-        You can add a Black-owned business to this list by clicking the button
+        Add to this list by clicking the button
         below.
       </Text>
 
