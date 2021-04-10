@@ -11,7 +11,7 @@ export const setUrlUtm = url => {
 
     if (!formattedURL.search) {
       // Set the one and only query
-      formattedURL += '?utm_source=Rebuild+Black+Business';
+      formattedURL += '';
     } else if (!formattedURL.search?.includes('utm_source')) {
       // Append if there are multiple queries and no utm_source
       const urlString = formattedURL.toString();
