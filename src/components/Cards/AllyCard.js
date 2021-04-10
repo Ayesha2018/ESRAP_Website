@@ -25,7 +25,7 @@ import Link from '../Link';
  * )
  */
 const AllyCard = forwardRef(
-  ({ first, last, email, specialty, location, ...props }, ref) => {
+  ({ first, website, last, email, specialty, location, ...props }, ref) => {
     const { onOpen, isOpen, onClose } = useDisclosure();
     const { updateRef } = useRef();
     const theme = useTheme();
@@ -73,8 +73,8 @@ const AllyCard = forwardRef(
             )}
             <Box marginTop="auto" paddingTop={theme.spacing.base}>
               <CardButtonGroup pb={3}>
-                <CardButton as="a" href={`mailto:${email}`}>
-                  Email
+                <CardButton as="a" href={`https://${email}/`}>
+                  Website
                 </CardButton>
               </CardButtonGroup>
               <Text as="small" fontSize="sm" mt={3} isInline>
