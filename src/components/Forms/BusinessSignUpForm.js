@@ -25,10 +25,10 @@ import { stateObj } from '../../utils/stateObj';
 import { validateSignUpForm } from '../../utils/validateSignUpForm';
 
 const businessCategories = [
-  'Entertainment',
-  'Retail',
-  'Professional services',
-  'Food and beverage',
+  'Poverty',
+  'Climate Change',
+  'Pollution',
+  'Child Education',
   'Health and wellness',
   'Other',
 ];
@@ -183,12 +183,12 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
         </Flex>
         <Flex direction="column" my={theme.spacing.base}>
           <FormControl isInvalid={errors.businessName} isRequired={true}>
-            <FormLabel htmlFor="businessName">Business Name</FormLabel>
+            <FormLabel htmlFor="businessName">NGO Name</FormLabel>
             <Input
               value={businessName}
               id="businessName"
               type="text"
-              placeholder="Business name"
+              placeholder="NGO name"
               onChange={event => setBusinessName(event.currentTarget.value)}
             />
             <FormErrorMessage>{errors.businessName}</FormErrorMessage>
@@ -219,12 +219,12 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
         <Flex direction="column" my={theme.spacing.base}>
           <FormControl isInvalid={errors.businessDescription} isRequired={true}>
             <FormLabel htmlFor="businessDescription">
-              Business Description
+              NGO Description
             </FormLabel>
             <Textarea
               value={businessDescription}
               id="businessDescription"
-              placeholder="Business description"
+              placeholder="NGO description"
               maxLength="250"
               onChange={event =>
                 setBusinessDescription(event.currentTarget.value)
@@ -244,7 +244,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
                 value={phone}
                 id="phone"
                 type="phone"
-                placeholder="(281) 330-8004"
+                placeholder="(+91) 020 12345"
                 onChange={event => setPhone(event.currentTarget.value)}
               />
             </InputGroup>
@@ -274,7 +274,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
                     value={streetAddress}
                     id="streetAddress"
                     type="text"
-                    placeholder="123 Martin Luther King Blvd."
+                    placeholder="206 Radiant Hill view"
                     onChange={event =>
                       setStreetAddress(event.currentTarget.value)
                     }
@@ -291,7 +291,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
                     value={city}
                     id="city"
                     type="text"
-                    placeholder="Atlanta"
+                    placeholder="Pune"
                     onChange={event => setCity(event.currentTarget.value)}
                   />
                   <FormErrorMessage>{errors.city}</FormErrorMessage>
@@ -321,14 +321,14 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
               </Flex>
               <Flex direction="column" mt={theme.spacing.base}>
                 <FormControl isInvalid={errors.zipcode}>
-                  <FormLabel isRequired htmlFor="zipcode">
-                    Zipcode
+                  <FormLabel isRequired htmlFor="pincode">
+                    pincode
                   </FormLabel>
                   <Input
                     value={zipcode}
-                    id="zipcode"
+                    id="pincode"
                     type="text"
-                    placeholder="Zipcode"
+                    placeholder="PinCode"
                     onChange={event => setZipcode(event.currentTarget.value)}
                   />
                   <FormErrorMessage>{errors.zipcode}</FormErrorMessage>
@@ -425,7 +425,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
           onChange={() => setAdult(prev => !prev)}
           marginRight="0.5rem"
         />
-        <FormLabel htmlFor="adult">Adult Business (18+)</FormLabel>
+        <FormLabel htmlFor="adult">Some check box </FormLabel>
       </Flex>
       <Flex direction="column" my={theme.spacing.base}>
         <Flex>
@@ -437,7 +437,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
             isChecked={hasDonation}
           />
           <FormLabel htmlFor="hasDonation">
-            Business has an ongoing donation campaign
+            when you click this it will pop up more 
           </FormLabel>
         </Flex>
         {hasDonation && (
@@ -447,7 +447,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
                 isRequired={hasDonation ? true : false}
                 htmlFor="donationLink"
               >
-                Donation Link
+                Some more Link
               </FormLabel>
               <InputGroup>
                 <InputLeftElement
@@ -564,7 +564,7 @@ const BusinessSignUpForm = ({ isFundraiser = false }) => {
           marginRight="0.5rem"
         />
         <FormLabel htmlFor="bobAgreement">
-          I understand that I am registering this business as Black-owned
+          I understand terms and conditions
         </FormLabel>
       </Flex>
       <Flex width="100%" marginBottom="1.9375rem" justify="center">
