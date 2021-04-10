@@ -219,7 +219,7 @@ const PrimaryNav = forwardRef(
                     onClick={onOpen}
                     hidden={!isVisible || undefined}
                   >
-                    LoginHimanshu 
+                    Subscribe 
                   </Button>
                 </Flex>
               ) : null}
