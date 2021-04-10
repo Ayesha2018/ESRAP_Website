@@ -56,11 +56,11 @@ const Process = () => {
               If you have questions, please email us at{' '}
               <ExternalLink
                 variant="standard"
-                href="mailto:social@rebuildblackbusiness.com"
+                href="mailto:sahil@forearmworldwide.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                social@rebuildblackbusiness.com.
+                sahil@forearmworldwide.com.
               </ExternalLink>
             </Text>
           </Flex>
